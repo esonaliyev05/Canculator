@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.display input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.result {
+  font-size: 1.2em;
+  color: #888;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.keypad button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.keypad button:active {
+  background-color: #ccc;
+}
+
+.keypad button:nth-child(4n) {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.keypad button:nth-child(4n):active {
+  background-color: #e07b00;
+}
